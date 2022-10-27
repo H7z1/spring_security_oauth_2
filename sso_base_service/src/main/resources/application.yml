@@ -1,0 +1,25 @@
+#基本
+spring:
+  messages:
+    basename: i18n.message
+    encoding: UTF-8
+    fallback-to-system-locale: true
+    use-code-as-default-message: false
+    always-use-message-format: false
+  application:
+    name: sso_base
+  profiles:
+    active: local
+  security:
+    user:
+      name: user
+      password: 123456
+      roles: USER,ADMIN
+
+#日志
+logging:
+  level:
+    org.springframework.security: DEBUG
+  pattern:
+    console: '%clr(%d{E HH:mm:ss.SSS}){blue} %clr(%-5p) %clr(${PID}){faint} %clr(---){faint}
+              %clr([%8.15t]){cyan} %clr(%-40.40logger{0}){blue} %clr(:){red} %clr(%m){faint}%n'

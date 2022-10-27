@@ -29,7 +29,7 @@
         <dependency>
             <groupId>com.lzh</groupId>
             <artifactId>swagger2-lin</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>1.0</version>
         </dependency>
 
         <!-- 统一guava版本 -->
